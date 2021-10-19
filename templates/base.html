@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="ROBOTS" content="ALL" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="description" content="Rancang Bangun Sistem Keamanan Parkir Apartemen Menggunakan Facerecognition Berbasis Web" />
+    <meta name="keywords" content="">
+    <meta name="author" content="Robby Prasetyo">
+
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://static.djangoproject.com/img/icon-touch.e4872c4da341.png">
+    <link rel="icon" sizes="192x192" href="https://static.djangoproject.com/img/icon-touch.e4872c4da341.png">
+    <link rel="shortcut icon" href="https://static.djangoproject.com/img/favicon.6dbf28c0650e.ico">
+    <meta name="msapplication-TileColor" content="#113228">
+    <meta name="msapplication-TileImage" content="https://static.djangoproject.com/img/icon-tile.b01ac0ef9f67.png">
+
+    <title>Rancang Bangun Sistem Keamanan Parkir Apartemen Menggunakan Facerecognition Berbasis Web</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://static.djangoproject.com/css/output.89da94f298fe.css" >
+    <script src="https://static.djangoproject.com/js/lib/webfontloader/webfontloader.e75218f5f090.js"></script>
+    <script>
+    WebFont.load({
+      custom: {
+        families: ['FontAwesome', 'Fira+Mono'],
+      },
+      google: {
+        families: ['Roboto:400italic,700italic,300,700,400:latin'
+        ]
+      },
+      classes: false,
+      events: false,
+      timeout: 1000
+    });
+    </script>
+    <script src="https://static.djangoproject.com/js/lib/modernizr.3b36762e418a.js"></script>
+    
+  </head>
+
+  <body id="homepage" class="homepage">
+
+    <div role="banner" id="top">
+  <div class="container">
+    <a class="logo" href="/"></a>
+    <p class="meta"></p>
+    <div role="navigation">
+      <ul>
+        <li>
+          <a href="/">Overview</a>
+        </li>
+        <li>
+            <a href="/" target="_blank" rel="noopener">Verification</a>
+        </li>
+        <li>
+            <a href="/" target="_blank" rel="noopener">Supervision</a>
+        </li>
+        <li>
+          <a href="/">Documentation</a>
+        </li>
+        <li>
+          <a href="/">News</a>
+        </li>
+        <li>
+          <a href="/admin">Admin</a>
+        </li>
+        <li>
+          <a href="/">About</a>
+        </li>
+        <li>
+          <a href="/">Login</a>
+        </li>
+        <li>
+          <a href="/">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="homepage">
+  {% block content %}
+
+  {% endblock %}
+</div>
+
+<script>
+  function extless(input) {
+      return input.replace(/(.*)\.[^.]+$/, '$1');
+  }
+  var require = {
+      shim: {
+          'jquery': [],
+          'jquery.inview': ["jquery"],
+          'jquery.payment': ["jquery"],
+          'jquery.flot': ["jquery"],
+          'jquery.unveil': ["jquery"],
+          'stripe': {
+            exports: 'Stripe'
+          }
+      },
+      paths: {
+          "jquery": extless("https://static.djangoproject.com/js/lib/jquery/dist/jquery.min.87e69028f78d.js"),
+          "jquery.inview": extless("https://static.djangoproject.com/js/lib/jquery.inview/jquery.inview.min.4edba1c65592.js"),
+          "jquery.payment": extless("https://static.djangoproject.com/js/lib/jquery.payment/lib/jquery.payment.e99c05ca79ae.js"),
+          "jquery.unveil": extless("https://static.djangoproject.com/js/lib/unveil/jquery.unveil.min.ac79eb277093.js"),
+          "jquery.flot": extless("https://static.djangoproject.com/js/lib/jquery-flot/jquery.flot.min.9964206e9d7f.js"),
+          "clipboard": extless("https://static.djangoproject.com/js/lib/clipboard/dist/clipboard.min.bd70fd596a23.js"),
+          "mod/floating-warning": extless("https://static.djangoproject.com/js/mod/floating-warning.a21b2abd2884.js"),
+          "mod/list-collapsing": extless("https://static.djangoproject.com/js/mod/list-collapsing.c1a08d3ef9e9.js"),
+          "mod/list-feature": extless("https://static.djangoproject.com/js/mod/list-feature.73529480f25b.js"),
+          "mod/mobile-menu": extless("https://static.djangoproject.com/js/mod/mobile-menu.841726ee903a.js"),
+          "mod/version-switcher": extless("https://static.djangoproject.com/js/mod/version-switcher.c28bb83972bb.js"),
+          "mod/search-key": extless("https://static.djangoproject.com/js/mod/search-key.f3c0a6fcfedd.js"),
+          "mod/stripe-change-card": extless("https://static.djangoproject.com/js/mod/stripe-change-card.682c710317a8.js"),
+          "mod/console-tabs": extless("https://static.djangoproject.com/js/mod/console-tabs.70ce882faaf3.js"),
+          "stripe-checkout": "https://checkout.stripe.com/checkout",
+          "stripe": "https://js.stripe.com/v3/?" // ? needed due to require.js
+      }
+  };
+  </script>
+  <script data-main="https://static.djangoproject.com/js/main.2f2c378dba28.js" src="https://static.djangoproject.com/js/lib/require.177879fbe7dd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
