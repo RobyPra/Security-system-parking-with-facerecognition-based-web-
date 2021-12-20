@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'myauth',
     'widget_tweaks',
     'bootstrap5',
+    
 ]
 
 MIDDLEWARE = [
